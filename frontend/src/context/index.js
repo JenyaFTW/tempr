@@ -1,16 +1,13 @@
 import { createContext, useEffect, useState } from "react";
-import { ApolloClient, ApolloLink, InMemoryCache, gql, split, useQuery } from '@apollo/client';
-import { WebSocketLink } from '@apollo/client/link/ws';
-import { getMainDefinition } from "@apollo/client/utilities";
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import { ApolloProvider } from 'react-apollo';
-import { HttpLink } from "apollo-link-http";
 import { get, set } from "js-cookie";
 
 export const Context = createContext();
 
 export const Provider = (props) => {
     const apolloClient = new ApolloClient({
-        uri: 'http://192.168.0.102:3001/graphql',
+        uri: '/graphql',
         cache: new InMemoryCache()
     });
 

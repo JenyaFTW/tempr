@@ -1,0 +1,12 @@
+{
+  "name": "tempr",
+  "version": "1.0.0",
+  "description": "Self hosted solution for temporary emails",
+  "scripts": {
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
