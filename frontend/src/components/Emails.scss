@@ -1,0 +1,29 @@
+.emails {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px;
+    gap: 16px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1B1464;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.email__subject {
+    font-weight: 600;
+    color: #9c88ff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 75%;
+}
+
+.email__timestamp {
+    font-weight: 600;
+    color: #9c88ff;
+}
