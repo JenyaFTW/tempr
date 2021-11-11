@@ -1,1 +1,1 @@
-web: npm run postinstall & npm run build & npm run start
+app: npm run postinstall & npm run build & npm run start
